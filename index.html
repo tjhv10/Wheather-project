@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
   <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
   <div class="weather-app">
     <header class="app-header">
-      <h1>Weather App</h1>
+      <h1 id="wethH" style="color:rgb(25, 123, 189);">Weather App</h1>
     </header>
     <main>
       <div class="weather-card">
+        <hr />
+        <img id="pic" width="200" height="200">
         <h2 id="temp">13°C</h2>
         <p id="condition">Broken Clouds</p>
-        <p id="location"><i class="fa fa-map-marker"></i> Kathmandu, Nepal</p>
+        <div class="location">
+          <img src="img/loc.png">
+          <p id="location">Kathmandu, Nepal</p>
+        </div>
+        <hr />
         <div class="details">
+          <img src="img/temp.png" width="40" height="40">
           <div class="feels-like">
-            <p>Feels like</p>
             <p id="feels-like">17°C</p>
+            <p>Feels like</p>
           </div>
+          <div class="vl"></div>
+          <img src="img/hum.png" width="40" height="50">
           <div class="humidity">
-            <p>Humidity</p>
             <p id="humidity">84%</p>
+            <p>Humidity</p>
           </div>
         </div>
       </div>
@@ -31,4 +42,5 @@
   </div>
   <script src="main.js"></script>
 </body>
+
 </html>
