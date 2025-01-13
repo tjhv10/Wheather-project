@@ -30,4 +30,3 @@ const getLocation = () => {
 updateWeather();
 setInterval(updateWeather, 30000);
 
-
